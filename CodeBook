@@ -1,0 +1,20 @@
+ CODEBOOK FOR run_analysis.R		
+Variable: Name	Values: Explanation
+Path:	UCI HAR Dataset/	Folder which contain Data Set
+
+x_Train:	train/X_train.txt	Load txt data
+y_Train:	train/Y_train.txt	Load txt data
+x_Test:	test/X_test.txt	Load txt data
+y_Test:	test/Y_test.txt	Load txt data
+
+ColNames: 	features.txt	Load txt Column Names
+ActivityLabels:	activity_labels.txt	Load Activity Labels
+
+x_Merge:	x_Test+x_Train	Merges the training and the test sets to create one data set
+y_Merge:	y_Test+y_Train	Merges the training and the test sets to create one data set
+
+ColMean:		Identifies the Means Columns
+ColStd:  		Identifies the Dev Std Columns
+z:	ColMeanStd + ColStd	
+ColMeanStd:		Identifies Both Dev Std and Means Columns
+xSubset:		Extracts only the measurements on the mean and standard deviation for each measurement.
